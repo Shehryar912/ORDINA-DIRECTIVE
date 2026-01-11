@@ -1,0 +1,442 @@
+{
+  "members": [
+    {
+      "id": "shehryar-aslam",
+      "name": "Shehryar Aslam",
+      "codename": "Shadow Serpent",
+      "rank": "Senior Operative",
+      "birthDate": "January 14, 2006",
+      "birthPlace": "Liaquat Pur, Pakistan",
+      "joinDate": "Unknown - Estimated 2010-2012",
+      "status": "Active",
+      "specialization": "Intelligence Gathering & Strategic Elimination",
+      "bioPublic": "Shadow Serpent operates across multiple continents with exceptional analytical capabilities. One of the Directive's most trusted operatives, specializing in deep reconnaissance and strategic operations.",
+      "bio": "Born in Liaquat Pur, Shehryar's recruitment into the Ordina Directive remains one of the organization's most classified secrets. Early genetic screening during a routine medical examination in 2010 revealed unprecedented neural pattern anomalies - a rare combination of enhanced pattern recognition and emotional dissociation markers that occur in less than 0.001% of the population. The Directive's bio-surveillance network flagged him immediately. His induction was approved at the highest levels, making him one of the youngest recruits in Directive history. His early years in Karachi served as both his childhood and his training ground, with handlers embedded in his daily life without his conscious awareness. By 2018, he was fully operational, having demonstrated capabilities that exceeded initial projections.",
+      "recruitment": {
+        "date": "Estimated between 2010-2012 (Exact date classified)",
+        "method": "Bio-Genetic Surveillance Program - Project Helix",
+        "details": "Subject identified through the Directive's global genetic screening initiative. Rare neural markers indicating exceptional cognitive abilities and psychological stability under extreme stress. Early childhood integration protocol initiated. Full operational consciousness activated at age 12. Karachi operation served as extended field training and evaluation phase."
+      },
+      "image": "shehryar-aslam.jpg",
+      "missions": [
+        {
+          "id": "kalam-operation",
+          "name": "Operation: Mountain Ghost",
+          "location": "Kalam Valley, Pakistan",
+          "date": "2024",
+          "status": "Completed",
+          "description": "Deep reconnaissance mission in the mountainous terrain of Kalam Valley. Objective: Secure critical intelligence regarding regional power movements and Chinese-Pakistani infrastructure cooperation.",
+          "outcome": "Successfully retrieved classified documents without detection. Established surveillance network in remote regions.",
+          "images": ["kalam-1.jpg", "kalam-2.jpg", "kalam-3.jpg"]
+        },
+        {
+          "id": "cholistan-mission",
+          "name": "Operation: Desert Oracle",
+          "location": "Cholistan Desert, Pakistan",
+          "date": "2025",
+          "status": "Completed",
+          "description": "Infiltration of a clandestine meeting in the heart of Cholistan Desert involving high-ranking military officials and foreign intelligence assets.",
+          "outcome": "Target neutralized. Intelligence secured for Directive archives. Desert network established.",
+          "images": ["cholistan-1.jpg", "cholistan-2.jpg"]
+        },
+        {
+          "id": "karachi-assignment",
+          "name": "Project Awakening: Karachi Protocol",
+          "location": "Karachi, Pakistan",
+          "date": "2010-2022",
+          "status": "Completed",
+          "description": "Extended deep-cover operation spanning 12 years. Subject underwent integrated training while maintaining civilian identity. Extensive urban warfare training, intelligence analysis, and psychological conditioning. First conscious Directive operation at age 12.",
+          "outcome": "Successfully transitioned to full operative status. Psychological integration complete.",
+          "images": ["karachi-1.jpg", "karachi-2.jpg"]
+        },
+        {
+          "id": "lahore-operations",
+          "name": "The Lahore Protocol",
+          "location": "Lahore, Pakistan",
+          "date": "2023-Present",
+          "status": "Ongoing",
+          "description": "Coordination hub for South Asian operations. Managing multiple assets and conducting high-level negotiations with regional powers. Deep penetration of political and military networks.",
+          "outcome": "Ongoing operations with 98% success rate. Regional control established.",
+          "images": ["lahore-1.jpg", "lahore-2.jpg", "lahore-3.jpg"]
+        },
+        {
+          "id": "istanbul-shadow",
+          "name": "Operation: Byzantine Shadow",
+          "location": "Istanbul, Turkey",
+          "date": "2023",
+          "status": "Completed",
+          "description": "Infiltration of NATO intelligence network operating in Turkey. Objective: Secure communication protocols and identify embedded Directive assets within Turkish military structure.",
+          "outcome": "Protocols acquired. Three new assets recruited. Turkish intelligence partially compromised.",
+          "images": ["istanbul-1.jpg", "istanbul-2.jpg"]
+        },
+        {
+          "id": "london-protocol",
+          "name": "The London Convergence",
+          "location": "London, United Kingdom",
+          "date": "2024",
+          "status": "Completed",
+          "description": "High-stakes operation during international summit. Coordination with Victoria Stone. Objective: Plant surveillance devices in residences of five world leaders including advisors to major powers.",
+          "outcome": "All targets successfully compromised. Real-time intelligence feed established.",
+          "images": ["london-1.jpg", "london-2.jpg", "london-3.jpg"]
+        }
+      ]
+    },
+    {
+      "id": "victoria-stone",
+      "name": "Victoria Stone",
+      "codename": "Iron Widow",
+      "rank": "Master Assassin",
+      "birthDate": "March 8, 1988",
+      "birthPlace": "London, United Kingdom",
+      "joinDate": "2010",
+      "status": "Active",
+      "specialization": "Political Manipulation & High-Value Elimination",
+      "bioPublic": "Iron Widow is a legendary operative known for elegant efficiency. Specializes in political manipulation and high-value target elimination across European and American theaters.",
+      "bio": "A former MI6 operative who discovered evidence of the Directive's existence during a classified investigation. Rather than being eliminated, her exceptional skills and psychological profile led to an unprecedented recruitment offer. She saw beyond governmental theatrics and chose to join the true architects of global power. Her transition from hunter to member remains a case study in Directive recruitment protocols.",
+      "recruitment": {
+        "date": "August 2010",
+        "method": "Hostile Contact Conversion",
+        "details": "Subject was investigating Directive activities in London. Upon discovering partial truth, she was presented with a choice: join or disappear. Her decision to join came after being shown irrefutable evidence of the Directive's global reach and the illusion of governmental power. She eliminated her own MI6 handler as proof of commitment."
+      },
+      "image": "victoria-stone.jpg",
+      "missions": [
+        {
+          "id": "dubai-summit",
+          "name": "Operation: Golden Mirage",
+          "location": "Dubai, UAE",
+          "date": "2023",
+          "status": "Completed",
+          "description": "Infiltrated exclusive summit attended by multiple world leaders including discussions with advisors close to former President Trump's circle.",
+          "outcome": "Obtained critical intelligence on Middle Eastern policy shifts. Three opposition targets removed from the equation.",
+          "images": ["dubai-1.jpg", "dubai-2.jpg"]
+        },
+        {
+          "id": "paris-protocol",
+          "name": "The Paris Protocol",
+          "location": "Paris, France",
+          "date": "2022",
+          "status": "Completed",
+          "description": "Complex operation involving French intelligence services and European Union leadership.",
+          "outcome": "Successfully redirected EU policy through strategic elimination of key opposition.",
+          "images": ["paris-1.jpg", "paris-2.jpg", "paris-3.jpg"]
+        },
+        {
+          "id": "washington-shadow",
+          "name": "Washington's Shadow",
+          "location": "Washington D.C., USA",
+          "date": "2021",
+          "status": "Classified",
+          "description": "Deep cover operation within U.S. political circles. Direct observation of Trump administration remnants and their influence networks.",
+          "outcome": "Data collection complete. Assets positioned for future operations.",
+          "images": ["washington-1.jpg", "washington-2.jpg"]
+        }
+      ]
+    },
+    {
+      "id": "dmitri-volkov",
+      "name": "Dmitri Volkov",
+      "codename": "Red Winter",
+      "rank": "Intelligence Director",
+      "birthDate": "December 2, 1982",
+      "birthPlace": "Moscow, Russia",
+      "joinDate": "2008",
+      "status": "Active",
+      "specialization": "Eastern European Operations & Cyber Warfare",
+      "bioPublic": "Red Winter commands Eastern European operations with unmatched expertise in cyber warfare. His network spans Russia, Ukraine, and Central Asia.",
+      "bio": "Once a decorated officer in Russian intelligence, Dmitri discovered the Directive while investigating unexplained intelligence leaks. Realizing the FSB served interests beyond Mother Russia, he chose to serve the true power. His defection was staged as a death during a training exercise. The Directive gained Russia's secrets; Russia gained a ghost.",
+      "recruitment": {
+        "date": "January 2008",
+        "method": "Intelligence Asset Flip",
+        "details": "Subject discovered Directive operations while investigating FSB security breaches. Rather than eliminate a valuable asset, the Directive extended an invitation. His 'death' was staged during a Siberian training exercise. Body was never recovered. Putin attended his funeral."
+      },
+      "image": "dmitri-volkov.jpg",
+      "missions": [
+        {
+          "id": "moscow-winter",
+          "name": "Operation: Winter's Breath",
+          "location": "Moscow, Russia",
+          "date": "2024",
+          "status": "Completed",
+          "description": "Manipulation of key oligarchs and their connections to ensure Directive interests in Russian policy decisions.",
+          "outcome": "Three oligarchs now operating under Directive guidance. Putin's inner circle penetrated.",
+          "images": ["moscow-1.jpg", "moscow-2.jpg"]
+        },
+        {
+          "id": "kiev-shadow",
+          "name": "The Kiev Shadow Game",
+          "location": "Kiev, Ukraine",
+          "date": "2023",
+          "status": "Completed",
+          "description": "Complex operation during ongoing regional tensions. Secured intelligence from both sides of the conflict.",
+          "outcome": "Directive positioned as invisible mediator. Critical leverage obtained.",
+          "images": ["kiev-1.jpg", "kiev-2.jpg", "kiev-3.jpg"]
+        },
+        {
+          "id": "berlin-protocol",
+          "name": "Berlin Protocol",
+          "location": "Berlin, Germany",
+          "date": "2022",
+          "status": "Completed",
+          "description": "Infiltration of German intelligence networks and establishment of permanent Directive presence.",
+          "outcome": "Assets embedded in German government at multiple levels.",
+          "images": ["berlin-1.jpg", "berlin-2.jpg"]
+        }
+      ]
+    },
+    {
+      "id": "maya-nakamura",
+      "name": "Maya Nakamura",
+      "codename": "Silent Lotus",
+      "rank": "Infiltration Specialist",
+      "birthDate": "July 19, 1995",
+      "birthPlace": "Tokyo, Japan",
+      "joinDate": "2018",
+      "status": "Active",
+      "specialization": "Corporate Espionage & Asian Operations",
+      "bioPublic": "Silent Lotus specializes in both traditional and digital infiltration. Youngest member of the elite council with unmatched skills in Asian power structures.",
+      "bio": "The youngest member of the Directive's elite council, Maya's prowess in both traditional and digital infiltration is unmatched. Recruited after accidentally breaching Directive secure communications while conducting independent cyber operations. Her ability to move through Asian power structures makes her essential for operations in the Pacific region. The Directive saw potential; she saw purpose.",
+      "recruitment": {
+        "date": "March 2018",
+        "method": "Cyber Intrusion Response Protocol",
+        "details": "Subject breached Level 3 Directive communications while conducting independent hacking operation. Rather than eliminate her, the Directive traced her physical location and extended an invitation within 48 hours. She accepted after being shown the scope of Directive operations. Her first assignment was to close the vulnerability she discovered."
+      },
+      "image": "maya-nakamura.jpg",
+      "missions": [
+        {
+          "id": "tokyo-corporate",
+          "name": "Operation: Rising Sun",
+          "location": "Tokyo, Japan",
+          "date": "2024",
+          "status": "Completed",
+          "description": "Infiltration of major Japanese conglomerates with ties to government leadership. Secured technological secrets and political leverage.",
+          "outcome": "Five corporations now under indirect Directive control. Access to cutting-edge technology secured.",
+          "images": ["tokyo-1.jpg", "tokyo-2.jpg"]
+        },
+        {
+          "id": "beijing-dragon",
+          "name": "The Beijing Dragon",
+          "location": "Beijing, China",
+          "date": "2023",
+          "status": "Classified",
+          "description": "High-risk operation within Chinese government structures. Direct observation of Xi Jinping's administration.",
+          "outcome": "Successfully established covert channels within Chinese Communist Party hierarchy.",
+          "images": ["beijing-1.jpg", "beijing-2.jpg", "beijing-3.jpg"]
+        },
+        {
+          "id": "singapore-nexus",
+          "name": "Singapore Nexus",
+          "location": "Singapore",
+          "date": "2022",
+          "status": "Completed",
+          "description": "Financial intelligence operation targeting Asian banking systems and cryptocurrency networks.",
+          "outcome": "Directive now has unprecedented access to Asian financial flows.",
+          "images": ["singapore-1.jpg", "singapore-2.jpg"]
+        }
+      ]
+    },
+    {
+      "id": "carlos-mendez",
+      "name": "Carlos Mendez",
+      "codename": "Black Condor",
+      "rank": "Tactical Operations Commander",
+      "birthDate": "May 15, 1990",
+      "birthPlace": "Buenos Aires, Argentina",
+      "joinDate": "2015",
+      "status": "Active",
+      "specialization": "South American Operations & Direct Action",
+      "bioPublic": "Black Condor brings exceptional combat skills and regional knowledge to South American operations. Commands tactical operations across the continent.",
+      "bio": "Former special forces operator from Argentina, Carlos brings exceptional combat skills and regional knowledge to the Directive. His operations across South and Central America have secured critical resources and neutralized threats to the organization's interests. His recruitment came after his unit accidentally stumbled upon a Directive operation in the Amazon - he was the only survivor, and the only one deemed worthy of joining.",
+      "recruitment": {
+        "date": "July 2015",
+        "method": "Combat Assessment Protocol",
+        "details": "Subject's special forces unit interfered with Directive operation in Amazon region. During the confrontation, subject demonstrated exceptional tactical awareness and survival instincts. He was the only survivor of his 8-man unit. Rather than eliminate him, the Directive offered recruitment. His acceptance came after 72 hours of psychological evaluation."
+      },
+      "image": "carlos-mendez.jpg",
+      "missions": [
+        {
+          "id": "amazon-extraction",
+          "name": "Operation: Green Hell",
+          "location": "Amazon Rainforest, Brazil",
+          "date": "2024",
+          "status": "Completed",
+          "description": "Extraction of high-value target from deep in the Amazon. Target had information on illegal government operations.",
+          "outcome": "Target extracted. Intelligence led to policy changes in Brazilian administration.",
+          "images": ["amazon-1.jpg", "amazon-2.jpg"]
+        },
+        {
+          "id": "mexico-city-cartel",
+          "name": "The Cartel Protocol",
+          "location": "Mexico City, Mexico",
+          "date": "2023",
+          "status": "Completed",
+          "description": "Complex operation involving Mexican cartels and their connections to U.S. political figures, including former Trump administration contacts.",
+          "outcome": "Cartel leadership restructured. Border operations now monitored by Directive.",
+          "images": ["mexico-1.jpg", "mexico-2.jpg", "mexico-3.jpg"]
+        },
+        {
+          "id": "buenos-aires-network",
+          "name": "Buenos Aires Network",
+          "location": "Buenos Aires, Argentina",
+          "date": "2021",
+          "status": "Completed",
+          "description": "Establishment of South American headquarters and recruitment of regional assets.",
+          "outcome": "Network fully operational. 47 assets across 12 countries.",
+          "images": ["buenos-aires-1.jpg", "buenos-aires-2.jpg"]
+        }
+      ]
+    },
+    {
+      "id": "amara-okoye",
+      "name": "Amara Okoye",
+      "codename": "Desert Phantom",
+      "rank": "Regional Operations Chief",
+      "birthDate": "September 22, 1992",
+      "birthPlace": "Lagos, Nigeria",
+      "joinDate": "2017",
+      "status": "Active",
+      "specialization": "African Continental Operations & Resource Security",
+      "bioPublic": "Desert Phantom oversees all African operations with expertise in resource security and regional politics. Commands extensive network across the continent.",
+      "bio": "Born in Lagos, Amara rose through Nigerian intelligence before being recruited by the Directive after exposing a Chinese espionage ring operating in West Africa. Her understanding of African tribal politics, resource conflicts, and continental power dynamics made her invaluable. She now commands the Directive's entire African network, ensuring control over critical resources from cobalt mines to oil fields.",
+      "recruitment": {
+        "date": "November 2017",
+        "method": "Exceptional Performance Recognition",
+        "details": "Subject exposed major Chinese intelligence operation in Nigeria while working for NIA (National Intelligence Agency). Her investigation inadvertently uncovered Directive operations. Impressed by her capabilities and discretion, the Directive extended an invitation. She accepted after realizing the scope of real power in Africa was controlled from the shadows."
+      },
+      "image": "amara-okoye.jpg",
+      "missions": [
+        {
+          "id": "lagos-network",
+          "name": "Operation: Black Gold",
+          "location": "Lagos, Nigeria",
+          "date": "2024",
+          "status": "Completed",
+          "description": "Securing control over Nigerian oil infrastructure and establishing surveillance network across West African economic hub.",
+          "outcome": "Oil production now partially controlled by Directive shell companies. Government officials compromised.",
+          "images": ["lagos-1.jpg", "lagos-2.jpg", "lagos-3.jpg"]
+        },
+        {
+          "id": "kinshasa-cobalt",
+          "name": "The Kinshasa Protocol",
+          "location": "Kinshasa, Democratic Republic of Congo",
+          "date": "2023",
+          "status": "Completed",
+          "description": "Control operation targeting cobalt mining operations essential for global technology production. Neutralization of competing interests.",
+          "outcome": "Three major mines now under Directive influence. Supply chain manipulation capabilities established.",
+          "images": ["kinshasa-1.jpg", "kinshasa-2.jpg"]
+        },
+        {
+          "id": "addis-union",
+          "name": "Addis Ababa Summit",
+          "location": "Addis Ababa, Ethiopia",
+          "date": "2022",
+          "status": "Completed",
+          "description": "Infiltration of African Union headquarters during continental summit. Intelligence gathering on 54 nations simultaneously.",
+          "outcome": "Complete intelligence package on African Union leadership. 12 new assets recruited.",
+          "images": ["addis-1.jpg", "addis-2.jpg"]
+        }
+      ]
+    },
+    {
+      "id": "khalid-al-rashid",
+      "name": "Khalid Al-Rashid",
+      "codename": "Scorpion King",
+      "rank": "Middle Eastern Operations Director",
+      "birthDate": "April 11, 1985",
+      "birthPlace": "Riyadh, Saudi Arabia",
+      "joinDate": "2012",
+      "status": "Active",
+      "specialization": "Gulf States Intelligence & Energy Security",
+      "bioPublic": "Scorpion King commands Middle Eastern operations with deep connections to royal families and oil empires. Master of regional power dynamics.",
+      "bio": "Born into Saudi Arabian aristocracy, Khalid Al-Rashid had access to the highest levels of Gulf State power from birth. His recruitment came after he discovered his own family's involvement with the Directive - they had been assets for two generations. Rather than feel betrayed, he saw opportunity. Now he orchestrates operations across the entire Middle East, from Tehran to Tel Aviv, ensuring energy supplies flow according to Directive interests.",
+      "recruitment": {
+        "date": "May 2012",
+        "method": "Legacy Asset Activation",
+        "details": "Subject's family had served Directive interests for decades without his knowledge. Upon discovering the truth at age 27, he was offered full membership rather than continued unconscious service. His aristocratic connections and education in both Islamic and Western institutions made him ideal for Middle Eastern operations."
+      },
+      "image": "khalid-al-rashid.jpg",
+      "missions": [
+        {
+          "id": "riyadh-crown",
+          "name": "Operation: Desert Crown",
+          "location": "Riyadh, Saudi Arabia",
+          "date": "2024",
+          "status": "Ongoing",
+          "description": "Deep penetration of Saudi royal family and Vision 2030 infrastructure projects. Ensuring Directive influence over oil production quotas.",
+          "outcome": "Key decisions now require Directive approval. Three princes operating as assets.",
+          "images": ["riyadh-1.jpg", "riyadh-2.jpg"]
+        },
+        {
+          "id": "dubai-nexus",
+          "name": "The Dubai Nexus",
+          "location": "Dubai, UAE",
+          "date": "2023",
+          "status": "Completed",
+          "description": "Establishment of financial intelligence hub in UAE. Monitoring of global wealth flows through Dubai banking system.",
+          "outcome": "Complete access to Dubai financial networks. Real-time monitoring of $2.3 trillion in assets.",
+          "images": ["dubai-3.jpg", "dubai-4.jpg", "dubai-5.jpg"]
+        },
+        {
+          "id": "tehran-shadow",
+          "name": "Tehran Shadow Protocol",
+          "location": "Tehran, Iran",
+          "date": "2022",
+          "status": "Classified",
+          "description": "High-risk infiltration of Iranian nuclear program and Revolutionary Guard command structure.",
+          "outcome": "Intelligence secured. Three scientists recruited. Nuclear timeline known.",
+          "images": ["tehran-1.jpg", "tehran-2.jpg"]
+        }
+      ]
+    },
+    {
+      "id": "reza-shahidi",
+      "name": "Reza Shahidi",
+      "codename": "Persian Ghost",
+      "rank": "Deep Cover Specialist",
+      "birthDate": "January 30, 1987",
+      "birthPlace": "Isfahan, Iran",
+      "joinDate": "2015",
+      "status": "Active",
+      "specialization": "Iranian Intelligence & Regional Destabilization",
+      "bioPublic": "Persian Ghost operates in the most dangerous territory - deep inside Iranian power structures. Specializes in covert operations within hostile intelligence environments.",
+      "bio": "Reza Shahidi defected from Iranian intelligence (MOIS) after discovering the extent of corruption within the Revolutionary Guard. His recruitment by the Directive was facilitated through a complex extraction operation that made Iran believe he had been killed by Mossad. He now operates in the shadows of Iranian power, feeding intelligence to the Directive while maintaining his cover as a mid-level government official.",
+      "recruitment": {
+        "date": "August 2015",
+        "method": "Defector Extraction Protocol",
+        "details": "Subject was disillusioned MOIS officer seeking escape from Iran. Directive orchestrated fake assassination by Israeli intelligence. Subject was declared dead by Iranian government. He was extracted to Turkey, trained for 6 months, then reinserted into Iran with new identity. Now operates as government official while serving Directive."
+      },
+      "image": "reza-shahidi.jpg",
+      "missions": [
+        {
+          "id": "isfahan-nuclear",
+          "name": "Operation: Atomic Shadow",
+          "location": "Isfahan, Iran",
+          "date": "2024",
+          "status": "Ongoing",
+          "description": "Continuous surveillance of Iranian nuclear facilities. Real-time intelligence on enrichment activities and weapons development.",
+          "outcome": "Complete nuclear program timeline mapped. Three centrifuge facilities compromised.",
+          "images": ["isfahan-1.jpg", "isfahan-2.jpg"]
+        },
+        {
+          "id": "tehran-mullahs",
+          "name": "The Mullah Protocol",
+          "location": "Tehran, Iran",
+          "date": "2023",
+          "status": "Completed",
+          "description": "Infiltration of Supreme Leader's advisory council. Placement of surveillance in key religious and political locations.",
+          "outcome": "Audio surveillance in 8 critical locations. Three advisors compromised.",
+          "images": ["tehran-3.jpg", "tehran-4.jpg"]
+        },
+        {
+          "id": "qom-religious",
+          "name": "Qom Sacred Grounds",
+          "location": "Qom, Iran",
+          "date": "2022",
+          "status": "Completed",
+          "description": "Penetration of religious establishment in holy city of Qom. Intelligence on clerical power structure and succession plans.",
+          "outcome": "Complete map of religious hierarchy. Succession timeline known.",
+          "images": ["qom-1.jpg", "qom-2.jpg"]
+        }
+      ]
+    }
+  ]
+}

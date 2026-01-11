@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatives - Ordina Directive</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <span class="logo-icon">⟐</span>
+                <span class="logo-text">ORDINA DIRECTIVE</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">HOME</a></li>
+                <li><a href="/about" class="nav-link">THE DIRECTIVE</a></li>
+                <li><a href="/members" class="nav-link active">OPERATIVES</a></li>
+                <% if (accessLevel >= 2) { %>
+                <li><a href="/logout" class="nav-link access-active">LOGOUT</a></li>
+                <% } else { %>
+                <li><a href="/access" class="nav-link">ACCESS</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">ACTIVE OPERATIVES</h1>
+                <p class="page-subtitle">Elite agents executing the Directive's will across the globe</p>
+            </div>
+        </section>
+
+        <section class="members-section">
+            <div class="container">
+                <% if (accessLevel < 2) { %>
+                <div class="content-section" style="text-align: center; margin-bottom: 3rem; background: rgba(196, 30, 58, 0.1); border: 2px solid var(--accent-red); padding: 2rem;">
+                    <h3 style="color: var(--accent-red); margin-bottom: 1rem;">⚠ LIMITED ACCESS</h3>
+                    <p style="color: var(--secondary-text); margin-bottom: 1.5rem;">You are viewing Level 0 (PUBLIC) information. Real names and sensitive details are restricted.</p>
+                    <a href="/access" class="btn btn-primary">REQUEST CLEARANCE</a>
+                </div>
+                <% } %>
+                <div class="members-grid">
+                    <% members.forEach(member => { %>
+                        <div class="member-card">
+                            <div class="member-image-container">
+                                <img src="/images/members/<%= member.image %>" alt="<%= member.name %>" class="member-image">
+                                <div class="member-overlay">
+                                    <span class="member-status <%= member.status.toLowerCase() %>"><%= member.status %></span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <% if (member.name) { %>
+                                <h3 class="member-name"><%= member.name %></h3>
+                                <% } %>
+                                <p class="member-codename">"<%= member.codename %>"</p>
+                                <p class="member-rank"><%= member.rank %></p>
+                                <p class="member-specialization"><%= member.specialization %></p>
+                                <div class="member-stats">
+                                    <div class="stat">
+                                        <span class="stat-value"><%= member.missions.length %></span>
+                                        <span class="stat-label">Missions</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value"><%= member.joinDate %></span>
+                                        <span class="stat-label">Joined</span>
+                                    </div>
+                                </div>
+                                <a href="/member/<%= member.id %>" class="btn btn-small">VIEW PROFILE</a>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">⟐ Ordina Directive • Operating in Shadows Since [REDACTED]</p>
+            <p class="footer-subtext">What you see is merely the surface. What we control lies beneath.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

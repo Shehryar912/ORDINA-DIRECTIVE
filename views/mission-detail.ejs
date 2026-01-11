@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= mission.name %> - <%= member.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <span class="logo-icon">⟐</span>
+                <span class="logo-text">ORDINA DIRECTIVE</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">HOME</a></li>
+                <li><a href="/about" class="nav-link">THE DIRECTIVE</a></li>
+                <li><a href="/members" class="nav-link">OPERATIVES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="mission-detail">
+            <div class="container">
+                <a href="/member/<%= member.id %>" class="back-link">← Back to <%= member.name %>'s Profile</a>
+                
+                <div class="mission-header-large">
+                    <div class="mission-title-container">
+                        <h1 class="mission-title"><%= mission.name %></h1>
+                        <span class="mission-status-large <%= mission.status.toLowerCase().replace(' ', '-') %>"><%= mission.status %></span>
+                    </div>
+                    <div class="mission-meta-large">
+                        <div class="meta-item">
+                            <span class="meta-label">OPERATIVE</span>
+                            <span class="meta-value"><%= member.name %> ("<%= member.codename %>")</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">LOCATION</span>
+                            <span class="meta-value"><%= mission.location %></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">DATE</span>
+                            <span class="meta-value"><%= mission.date %></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-content">
+                    <div class="content-section">
+                        <h2 class="content-title">MISSION BRIEF</h2>
+                        <div class="content-divider"></div>
+                        <p class="content-text"><%= mission.description %></p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="content-title">OUTCOME</h2>
+                        <div class="content-divider"></div>
+                        <p class="content-text"><%= mission.outcome %></p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="content-title">MISSION GALLERY</h2>
+                        <div class="content-divider"></div>
+                        <p class="image-instruction">
+                            <em>CLASSIFIED IMAGES - Intelligence photographs from the operation</em>
+                        </p>
+                        <div class="mission-gallery">
+                            <% mission.images.forEach(image => { %>
+                                <div class="gallery-item">
+                                    <img src="/images/missions/<%= image %>" alt="Mission photo" class="gallery-image">
+                                    <div class="gallery-overlay">
+                                        <span class="gallery-label">CLASSIFIED</span>
+                                    </div>
+                                </div>
+                            <% }); %>
+                        </div>
+                    </div>
+
+                    <div class="classified-notice">
+                        <div class="notice-icon">⚠</div>
+                        <div class="notice-content">
+                            <h3>CLASSIFICATION WARNING</h3>
+                            <p>The information presented in this dossier has been sanitized for internal viewing. 
+                            Full operational details, including specific targets, methods, and collateral actions, 
+                            remain at the highest security clearance. Unauthorized disclosure will result in immediate termination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">⟐ Ordina Directive • Operating in Shadows Since [REDACTED]</p>
+            <p class="footer-subtext">What you see is merely the surface. What we control lies beneath.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

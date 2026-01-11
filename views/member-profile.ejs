@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= member.name || member.codename %> - Ordina Directive</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <span class="logo-icon">⟐</span>
+                <span class="logo-text">ORDINA DIRECTIVE</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">HOME</a></li>
+                <li><a href="/about" class="nav-link">THE DIRECTIVE</a></li>
+                <li><a href="/members" class="nav-link">OPERATIVES</a></li>
+                <% if (accessLevel >= 2) { %>
+                <li><a href="/logout" class="nav-link access-active">LOGOUT</a></li>
+                <% } else { %>
+                <li><a href="/access" class="nav-link">ACCESS</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="profile-header">
+            <div class="container">
+                <a href="/members" class="back-link">← Back to Operatives</a>
+                
+                <% if (accessLevel < 2) { %>
+                <div class="content-section" style="text-align: center; margin: 2rem 0; background: rgba(196, 30, 58, 0.1); border: 2px solid var(--accent-red); padding: 2rem;">
+                    <h3 style="color: var(--accent-red); margin-bottom: 1rem;">⚠ LEVEL 0 ACCESS - LIMITED INFORMATION</h3>
+                    <p style="color: var(--secondary-text); margin-bottom: 1.5rem;">True identity, birth details, and recruitment information require Level 2 clearance.</p>
+                    <a href="/access" class="btn btn-primary">REQUEST CLEARANCE</a>
+                </div>
+                <% } %>
+
+                <div class="profile-hero">
+                    <div class="profile-image-container">
+                        <img src="/images/members/<%= member.image %>" alt="<%= member.codename %>" class="profile-image">
+                        <div class="profile-badge <%= member.status.toLowerCase() %>"><%= member.status %></div>
+                    </div>
+                    <div class="profile-info">
+                        <% if (member.name) { %>
+                        <h1 class="profile-name"><%= member.name %></h1>
+                        <% } else { %>
+                        <h1 class="profile-name">[CLASSIFIED] <span class="access-required-badge">LEVEL 2</span></h1>
+                        <% } %>
+                        <p class="profile-codename">CODENAME: "<%= member.codename %>"</p>
+                        <p class="profile-rank"><%= member.rank %></p>
+                        <div class="profile-divider"></div>
+                        <div class="profile-details">
+                            <% if (member.birthDate) { %>
+                            <div class="detail-item">
+                                <span class="detail-label">Birth Date:</span>
+                                <span class="detail-value"><%= member.birthDate %></span>
+                            </div>
+                            <% } else { %>
+                            <div class="detail-item">
+                                <span class="detail-label">Birth Date:</span>
+                                <span class="detail-value">[CLASSIFIED] <span class="access-required-badge">LEVEL 2</span></span>
+                            </div>
+                            <% } %>
+                            
+                            <% if (member.birthPlace) { %>
+                            <div class="detail-item">
+                                <span class="detail-label">Birth Place:</span>
+                                <span class="detail-value"><%= member.birthPlace %></span>
+                            </div>
+                            <% } else { %>
+                            <div class="detail-item">
+                                <span class="detail-label">Birth Place:</span>
+                                <span class="detail-value">[CLASSIFIED] <span class="access-required-badge">LEVEL 2</span></span>
+                            </div>
+                            <% } %>
+                            
+                            <div class="detail-item">
+                                <span class="detail-label">Joined:</span>
+                                <span class="detail-value"><%= member.joinDate %></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Specialization:</span>
+                                <span class="detail-value"><%= member.specialization %></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-bio">
+            <div class="container">
+                <h2 class="section-title">OPERATIVE DOSSIER</h2>
+                <div class="section-divider"></div>
+                <p class="bio-text"><%= member.bio %></p>
+            </div>
+        </section>
+
+        <% if (member.recruitment && accessLevel >= 2) { %>
+        <section class="profile-bio" style="background: var(--secondary-bg);">
+            <div class="container">
+                <div class="classified-info">
+                    <span class="classified-label">⟐ CLASSIFIED - LEVEL 2 CLEARANCE ⟐</span>
+                    <h2 class="section-title">RECRUITMENT PROTOCOL</h2>
+                    <div class="section-divider"></div>
+                    <div class="content-text" style="max-width: 900px; margin: 0 auto;">
+                        <div class="detail-item" style="margin-bottom: 1.5rem;">
+                            <span class="detail-label" style="min-width: 200px;">Recruitment Date:</span>
+                            <span class="detail-value"><%= member.recruitment.date %></span>
+                        </div>
+                        <div class="detail-item" style="margin-bottom: 1.5rem;">
+                            <span class="detail-label" style="min-width: 200px;">Method:</span>
+                            <span class="detail-value"><%= member.recruitment.method %></span>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <strong style="color: var(--accent-gold); display: block; margin-bottom: 1rem;">Full Recruitment Details:</strong>
+                            <p style="color: var(--secondary-text); line-height: 2;"><%= member.recruitment.details %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <% } %>
+
+        <section class="missions-section">
+            <div class="container">
+                <h2 class="section-title">MISSION HISTORY</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Classified operations carried out by <%= member.name || member.codename %></p>
+                
+                <div class="missions-grid">
+                    <% member.missions.forEach(mission => { %>
+                        <div class="mission-card-large">
+                            <div class="mission-header">
+                                <h3 class="mission-name"><%= mission.name %></h3>
+                                <span class="mission-status <%= mission.status.toLowerCase().replace(' ', '-') %>"><%= mission.status %></span>
+                            </div>
+                            <div class="mission-meta">
+                                <span class="mission-location">📍 <%= mission.location %></span>
+                                <span class="mission-date">📅 <%= mission.date %></span>
+                            </div>
+                            <p class="mission-description"><%= mission.description %></p>
+                            <div class="mission-outcome">
+                                <strong>Outcome:</strong> <%= mission.outcome %>
+                            </div>
+                            <a href="/member/<%= member.id %>/mission/<%= mission.id %>" class="btn btn-small">FULL DETAILS</a>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">⟐ Ordina Directive • Operating in Shadows Since [REDACTED]</p>
+            <p class="footer-subtext">What you see is merely the surface. What we control lies beneath.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

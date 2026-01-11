@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Clearance - Ordina Directive</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <span class="logo-icon">⟐</span>
+                <span class="logo-text">ORDINA DIRECTIVE</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">HOME</a></li>
+                <li><a href="/about" class="nav-link">THE DIRECTIVE</a></li>
+                <li><a href="/members" class="nav-link">OPERATIVES</a></li>
+                <% if (accessLevel >= 2) { %>
+                <li><a href="/logout" class="nav-link access-active">LOGOUT</a></li>
+                <% } else { %>
+                <li><a href="/access" class="nav-link active">ACCESS</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="access-page">
+            <div class="container">
+                <div class="access-container">
+                    <div class="access-header">
+                        <div class="access-symbol">⟐</div>
+                        <h1 class="access-title">SECURITY CLEARANCE</h1>
+                        <p class="access-subtitle">Classified Information Access Protocol</p>
+                    </div>
+
+                    <% if (accessLevel >= 2) { %>
+                        <div class="access-granted">
+                            <div class="granted-icon">✓</div>
+                            <h2>LEVEL 2 CLEARANCE GRANTED</h2>
+                            <p>You have full access to classified information.</p>
+                            <div class="access-info">
+                                <p><strong>Clearance Level:</strong> CLASSIFIED</p>
+                                <p><strong>Access Permissions:</strong> Full operative dossiers, recruitment records, true identities</p>
+                                <p><strong>Session Valid:</strong> 24 hours</p>
+                            </div>
+                            <div class="access-actions">
+                                <a href="/members" class="btn btn-primary">VIEW OPERATIVES</a>
+                                <a href="/logout" class="btn btn-secondary">REVOKE ACCESS</a>
+                            </div>
+                        </div>
+                    <% } else { %>
+                        <div class="access-form-container">
+                            <div class="clearance-levels">
+                                <h3>Security Levels</h3>
+                                <div class="level-item">
+                                    <div class="level-badge level-0">LEVEL 0</div>
+                                    <div class="level-desc">
+                                        <strong>PUBLIC</strong><br>
+                                        Basic information: Codenames, ranks, general operations
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="level-badge level-1">LEVEL 1</div>
+                                    <div class="level-desc">
+                                        <strong>RESTRICTED</strong><br>
+                                        Moderate access: Names, locations, mission summaries
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="level-badge level-2">LEVEL 2</div>
+                                    <div class="level-desc">
+                                        <strong>CLASSIFIED</strong><br>
+                                        Full access: Complete dossiers, recruitment details, true identities
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="access-divider"></div>
+
+                            <form action="/access" method="POST" class="access-form">
+                                <h3>Request Elevated Clearance</h3>
+                                <p class="form-instruction">Enter your authorization code to access classified information.</p>
+                                
+                                <% if (error) { %>
+                                    <div class="access-error">
+                                        <span class="error-icon">⚠</span>
+                                        <%= error %>
+                                    </div>
+                                <% } %>
+
+                                <div class="form-group">
+                                    <label for="password">Authorization Code</label>
+                                    <input 
+                                        type="password" 
+                                        id="password" 
+                                        name="password" 
+                                        class="access-input" 
+                                        placeholder="Enter access code..."
+                                        required
+                                        autocomplete="off"
+                                    >
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full">REQUEST ACCESS</button>
+                            </form>
+
+                            <div class="access-warning">
+                                <div class="warning-icon">⚠</div>
+                                <p><strong>SECURITY NOTICE:</strong> Unauthorized access attempts are logged and monitored. Multiple failed attempts will trigger security protocols.</p>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">⟐ Ordina Directive • Operating in Shadows Since [REDACTED]</p>
+            <p class="footer-subtext">What you see is merely the surface. What we control lies beneath.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

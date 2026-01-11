@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  ordina-directive:
+    build: .
+    container_name: ordina-directive
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      # Mount images directory to persist images
+      - ./public/images:/app/public/images
+      # Mount data directory to easily update member data
+      - ./data:/app/data
+    networks:
+      - ordina-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  ordina-network:
+    driver: bridge
+
+# Optional: MongoDB service for future enhancement
+# Uncomment the sections below when you're ready to migrate from JSON to MongoDB
+
+# services:
+#   mongodb:
+#     image: mongo:7
+#     container_name: ordina-mongodb
+#     restart: unless-stopped
+#     ports:
+#       - "27017:27017"
+#     environment:
+#       - MONGO_INITDB_ROOT_USERNAME=admin
+#       - MONGO_INITDB_ROOT_PASSWORD=ordina_secure_pass_2026
+#       - MONGO_INITDB_DATABASE=ordina_directive
+#     volumes:
+#       - mongodb_data:/data/db
+#     networks:
+#       - ordina-network
+
+# volumes:
+#   mongodb_data:
